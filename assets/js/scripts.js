@@ -307,7 +307,47 @@
 
               $('.menu-button-filter li').removeClass('tagsort-active');
 
-              $(this).toggleClass('tagsort-active');
+              var temp = $(this).parent().closest('li')['context'];
+              //console.log(temp.innerHTML);
+              
+              if(temp.innerHTML.includes('All')){
+                $('#all-up').addClass('tagsort-active');
+                $('#all-down').addClass('tagsort-active');
+              }
+              else if(temp.innerHTML.includes('Cakes')){
+                  $('#cakes-up').addClass('tagsort-active');
+                  $('#cakes-down').addClass('tagsort-active');
+              }
+              else if(temp.innerHTML.includes('Brownies')){
+                  $('#brownies-up').addClass('tagsort-active');
+                  $('#brownies-down').addClass('tagsort-active');
+              }
+              else if(temp.innerHTML.includes('Cheesecakes')){
+                  $('#cheese-up').addClass('tagsort-active');
+                  $('#cheese-down').addClass('tagsort-active');
+              }
+              else if(temp.innerHTML.includes('Cookies')){
+                  $('#cookies-up').addClass('tagsort-active');
+                  $('#cookies-down').addClass('tagsort-active');
+              }
+              else if(temp.innerHTML.includes('Vegan')){
+                  $('#vegan-up').addClass('tagsort-active');
+                  $('#vegan-down').addClass('tagsort-active');
+              }
+              else if(temp.innerHTML.includes('Gluten')){
+                  $('#glutenfree-up').addClass('tagsort-active');
+                  $('#glutenfree-down').addClass('tagsort-active');
+              }
+              else if(temp.innerHTML.includes('Cannolies')){
+                  $('#cannolies-up').addClass('tagsort-active');
+                  $('#cannolies-down').addClass('tagsort-active');
+              }
+              else if(temp.innerHTML.includes('Cards')){
+                  $('#cards-up').addClass('tagsort-active');
+                  $('#cards-down').addClass('tagsort-active');
+              }
+
+              //$(this).toggleClass('tagsort-active');
 
               var filterValue=$(this).attr('data-filter');
 
