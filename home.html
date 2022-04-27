@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
 <head>
 <meta charset="utf-8" />
@@ -49,8 +49,8 @@
 	</div>
 	<!--  WRAPPER -->
 	<div id="wrapper">
-	<!-- Mobile menu overlay background -->
-	<div class="overlay" data-image-src="assets/images/content/mob-menu-background.jpg"></div>
+		<!-- Mobile menu overlay background -->
+		<div class="overlay" data-image-src="assets/images/content/mob-menu-background.jpg"></div>
 
 		<!-- BEGIN HEADER -->
 		<header id="header">
@@ -66,7 +66,7 @@
 							<ul class="socials-box pull-right">
 								<li><a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa fa-facebook"></i></div>Anna's Desserts</a></li>
 								<li>
-									<a href="#franchise">
+									<a href="become-a-franchise.html">
 										<div class="social-circle-border" style="margin-left:15px; margin-right: 10px; display: inline;">
 											<i class="fa fa-handshake-o"></i>
 										</div>
@@ -93,20 +93,20 @@
 							</button>
 
 							<!-- BEGIN MAIN MENU -->
-							<nav id="nav-mobile" class="navbar">
+							<nav id="top-menu" class="navbar">
 								<ul class="nav navbar-nav">
 									<li>
 										<a class="active" href="#home">Home</a>
 									</li>
+									<li><a href="#about">About Us</a></li>
+
+									<!-- From Nav Logo.png -->
+									<li class="border-none"><a href="#home" class="nav-logo"><img src="assets/images/logo.png" alt=""></a></li>
 									<li>
 										<a href="#menu">Menu</a>
 									</li>
-									
-									<!-- From Nav Logo.png -->
-									<li class="border-none"><a href="#home" class="nav-logo"><img src="assets/images/logo.png" alt=""></a></li>
 
-									<li><a href="contact">Contact Us</a></li>
-									<li><a href="#about">About Us</a></li>
+									<li><a href="#contact">Contact Us</a></li>
 								</ul>
 
 							</nav>
@@ -118,14 +118,14 @@
 			</div>
 		</header>
 		<!-- END HEADER -->
-
-	<!-- BEGIN HOME SLIDER -->
-	<section class="home" style="padding: 0px;" id="home">
-		<div class="xpro-slider-container">
-			 <div id="scroller" class="xpro-slider">
-					 <div class="xpro-slider-content">
+		<div id="body-sections"></div>
+		<!-- BEGIN HOME SLIDER -->
+		<section class="home" style="padding: 0px;" id="home">
+			<div class="xpro-slider-container">
+				<div id="scroller" class="xpro-slider">
+					<div class="xpro-slider-content">
 						<!--ON Slider Item -->
-						 <div class="xpro-slider-item" style="background-image:url(assets/images/slide/01_preview1600x800.jpg);background-position:right center">
+						<div class="xpro-slider-item" style="background-image:url(assets/images/slide/01_preview1600x800.jpg);background-position:right center">
 
 							<div class="xpro-item-layer p-slide-overlay" data-effect="animate({'delay':'0.5s', 'duration':'1s'})"></div>
 
@@ -133,26 +133,26 @@
 								<div class="logointro">
 									<img src="assets/images/logo_intro.png" alt="" />
 								</div>
-							 </div>
+							</div>
 
 							<div class="xpro-item-layer p-text-box" data-effect="animate({'Y':'20px', zoom:'in', 'delay':'1.6s', 'duration':'600ms'})">
 								<h1 class="xpro-item-layer-responsive xp-headtext">Welcome To Anna's Desserts</h1>
 								<div class="xpro-item-layer-responsive xp-headsubtext">
-										Ordering Dessert online is easy
+									Ordering Dessert online is easy
 								</div>
 							</div>
 						</div> <!--OFF Slider Item -->
-
 						<!--ON Slider Item -->
-						 <div class="xpro-slider-item" style="background-image:url(assets/images/slide/02_preview1600x800.jpg);background-position:right center">
+						<div class="xpro-slider-item" style="background-image:url(assets/images/slide/02_preview1600x800.jpg);background-position:right center">
 
 							<div class="xpro-item-layer p-slide-overlay" data-effect="animate({'delay':'0.5s', 'duration':'1s'})"></div>
 
 							<div class="xpro-item-layer p-intro-box" data-effect="animate({'Y':'20px', zoom:'in', 'delay':'1s', 'duration':'600ms'})">
 								<div class="logointro">
 									<img src="assets/images/logo_intro.png" alt="" />
-								s</div>
-							 </div>
+									s
+								</div>
+							</div>
 
 							<div class="xpro-item-layer p-text-box" data-effect="animate({'Y':'20px', zoom:'in', 'delay':'1.6s', 'duration':'600ms'})">
 								<h1 class="xpro-item-layer-responsive xp-headtext">Delicious Desserts</h1>
@@ -160,50 +160,88 @@
 									Order it Online Now
 								</div>
 							</div>
+						</div>
+						<!--OFF Slider Item -->
 					</div>
-					<!--OFF Slider Item -->
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- END HOME SLIDER -->
+		</section>
+		<!-- END HOME SLIDER -->
+		<!-- BEGIN ABOUT US  -->
+		<section id="about" class="about-us" onfocus="aboutFocus();">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="section-title">About Us</h2>
+						<div class="section-subtitle">Restoring authenticity to food from the ground up is the missioin that drives us. Restauration is the realization of a dream.</div>
+						<hr>
+						<h3 class="section-title-border text-uppercase">Celebrate your happyness with us!</h3>
+						<div class="col-sm-6 pad100">
+							<div class="content">
+								<p class="first-letter">Restourant are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
 
-	<!-- MENU OF THE DAY -->
-	<section id="menu" class="menu-list-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h2 class="section-title">Menu</h2>
-					<div class="section-subtitle">Restoring authenticity to food from the ground up is the missioin that drives us. Restauration is the realization of a dream.</div>
-					<hr>
+								<p>After 16 years in the restaurant business, 9 in farming, and several years dedicated to the study of nutrition, we decided now was the right time to take all that experience and synthesize it into a local eatery where people can enjoy exquisite food, support local food producers, and eat the kind of food they can feel good about.</p>
+							</div>
+							<div class="signatured-box">
+								<span class="signatured"><img src="assets/images/signatured.png" alt=""></span>
+							</div>
+						</div>
+						<div class="col-sm-6 pad100">
+							<div class="content">
+								<img src="https://via.placeholder.com/760x560&text=IMAGE+PLACEHOLDER" alt="">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END ABOUT -->
+		<!-- MENU OF THE DAY -->
+		<section id="menu" class="menu-list-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="section-title">Menu</h2>
+						<div class="section-subtitle">Restoring authenticity to food from the ground up is the missioin that drives us. Restauration is the realization of a dream.</div>
+						<hr>
 						<ul class="menu-button-filter edit-marginTop40">
 							<li data-filter="*" class="tagsort-active" id="all-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-bell"></i></div>
-								<span class="r-name">All</span></li>
+								<span class="r-name">All</span>
+							</li>
 							<li data-filter=".cakes" class="" id="cakes-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-cake"></i></div>
-								<span class="r-name">Cakes</span></li>
+								<span class="r-name">Cakes</span>
+							</li>
 							<li data-filter=".brownies" class="" id="brownies-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-cupcake"></i></div>
-								<span class="r-name">Brownies</span></li>
+								<span class="r-name">Brownies</span>
+							</li>
 							<li data-filter=".cheesecakes" class="" id="cheese-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-cake-1"></i></div>
-								<span class="r-name">Cheesecakes</span></li>
+								<span class="r-name">Cheesecakes</span>
+							</li>
 							<li data-filter=".cookies" class="" id="cookies-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-toast"></i></div>
-								<span class="r-name">Cookies</span></li>
+								<span class="r-name">Cookies</span>
+							</li>
 							<li data-filter=".vegan" class="" id="vegan-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-vegan"></i></div>
-								<span class="r-name">Vegan Items</span></li>
+								<span class="r-name">Vegan Items</span>
+							</li>
 							<li data-filter=".glutenfree" class="" id="glutenfree-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-vegetarian-food"></i></div>
-								<span class="r-name">Gluten-Free Items</span></li>
+								<span class="r-name">Gluten-Free Items</span>
+							</li>
 							<li data-filter=".cannolies" class="" id="cannolies-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-croissant"></i></div>
-								<span class="r-name">Cannolies</span></li>
+								<span class="r-name">Cannolies</span>
+							</li>
 							<li data-filter=".cards" class="" id="cards-up">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-browser"></i></div>
-								<span class="r-name">Greeting Cards</span></li>
+								<span class="r-name">Greeting Cards</span>
+							</li>
 						</ul>
 						<div class="row menu-items-list">
 							<div class="menu-item col-sm-6 col-xs-12 brownies">
@@ -603,138 +641,315 @@
 						<ul class="menu-button-filter edit-marginTop40">
 							<li data-filter="*" class="tagsort-active" id="all-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-bell"></i></div>
-								<span class="r-name">All</span></li>
+								<span class="r-name">All</span>
+							</li>
 							<li data-filter=".cakes" class="" id="cakes-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-cake"></i></div>
-								<span class="r-name">Cakes</span></li>
+								<span class="r-name">Cakes</span>
+							</li>
 							<li data-filter=".brownies" class="" id="brownies-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-cupcake"></i></div>
-								<span class="r-name">Brownies</span></li>
+								<span class="r-name">Brownies</span>
+							</li>
 							<li data-filter=".cheesecakes" class="" id="cheese-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-cake-1"></i></div>
-								<span class="r-name">Cheesecakes</span></li>
+								<span class="r-name">Cheesecakes</span>
+							</li>
 							<li data-filter=".cookies" class="" id="cookies-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-toast"></i></div>
-								<span class="r-name">Cookies</span></li>
+								<span class="r-name">Cookies</span>
+							</li>
 							<li data-filter=".vegan" class="" id="vegan-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-vegan"></i></div>
-								<span class="r-name">Vegan Items</span></li>
+								<span class="r-name">Vegan Items</span>
+							</li>
 							<li data-filter=".glutenfree" class="" id="glutenfree-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-vegetarian-food"></i></div>
-								<span class="r-name">Gluten-Free Items</span></li>
+								<span class="r-name">Gluten-Free Items</span>
+							</li>
 							<li data-filter=".cannolies" class="" id="cannolies-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-croissant"></i></div>
-								<span class="r-name">Cannolies</span></li>
+								<span class="r-name">Cannolies</span>
+							</li>
 							<li data-filter=".cards" class="" id="cards-down">
 								<div class="iconBox-icon center-block"><i class="glyph-icon flaticon-browser"></i></div>
-								<span class="r-name">Greeting Cards</span></li>
+								<span class="r-name">Greeting Cards</span>
+							</li>
 						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- END MENU OF THE DAY -->
-
-	<!-- BEGIN SPECIAL MENU  -->
-	<section class="special-menu parallax-box">
-		<div class="mediaSection-box">
+		</section>
+		<!-- END MENU OF THE DAY -->
+		<!-- BEGIN SPECIAL MENU  -->
+		<section class="special-menu parallax-box">
+			<div class="mediaSection-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2 class="section-title-border">Special Menu</h2>
+							<div class="section-subtitle">Checkout our below Special Menu for your Special Occassion.</div>
+							<div class="owl-carousel special-menu-slider">
+								<!-- On special-menu list  -->
+								<div class="item-frame-box">
+									<!-- On item  -->
+									<div class="item-bg-box">
+										<div class="image"><img src="assets/images/desserts/red_velvet.png" style="width: 265px; height: 265px;"></div>
+										<div class="info">
+											<h3 class="section-title-border text-uppercase">Red Velvet Cake</h3>
+											<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
+											<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
+										</div>
+									</div>
+								</div><!-- OFF item  -->
+								<div class="item-frame-box">
+									<!-- On item  -->
+									<div class="item-bg-box">
+										<div class="image"><img src="assets/images/desserts/layered-chocolate-cake.png" style="width: 265px; height: 265px;"></div>
+										<div class="info">
+											<h3 class="section-title-border text-uppercase">Chocolate Layer Cake</h3>
+											<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
+											<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
+										</div>
+									</div>
+								</div><!-- OFF item  -->
+								<div class="item-frame-box">
+									<!-- On item  -->
+									<div class="item-bg-box">
+										<div class="image"><img src="assets/images/desserts/cannolies-dozen.png" style="width: 265px; height: 265px;"></div>
+										<div class="info">
+											<h3 class="section-title-border text-uppercase">Cannolies - 12 Pieces</h3>
+											<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
+											<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
+										</div>
+									</div>
+								</div><!-- OFF item  -->
+								<div class="item-frame-box">
+									<!-- On item  -->
+									<div class="item-bg-box">
+										<div class="image"><img src="assets/images/desserts/cookie-cream-brownie.png" style="width: 265px; height: 265px;"></div>
+										<div class="info">
+											<h3 class="section-title-border text-uppercase">Cookie & Cream Brownie</h3>
+											<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
+											<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
+										</div>
+									</div>
+								</div><!-- OFF item  -->
+								<div class="item-frame-box">
+									<!-- On item  -->
+									<div class="item-bg-box">
+										<div class="image"><img src="assets/images/desserts/with_love_brownies.png" style="width: 265px; height: 265px;"></div>
+										<div class="info">
+											<h3 class="section-title-border text-uppercase">With Love Brownie</h3>
+											<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
+											<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
+										</div>
+									</div>
+								</div><!-- OFF item  -->
+							</div><!-- OFF special-menu list  -->
+						</div>
+					</div><!-- Off row  -->
+				</div>
+			</div>
+		</section>
+		<!-- END SPECIAL MENU  -->
+		<!--CONTACT US START-->
+		<section id="contact" class="contact-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-					<h2 class="section-title-border">Special Menu</h2>
-					<div class="section-subtitle">Checkout our below Special Menu for your Special Occassion.</div>
-						<div class="owl-carousel special-menu-slider"> <!-- On special-menu list  -->
-							<div class="item-frame-box"><!-- On item  -->
-								<div class="item-bg-box">
-									<div class="image"><img src="assets/images/desserts/red_velvet.png" style="width: 265px; height: 265px;"></div>
-									<div class="info">
-										<h3 class="section-title-border text-uppercase">Red Velvet Cake</h3>
-										<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
-										<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
-									</div>
-								</div>
-							</div><!-- OFF item  -->
-							<div class="item-frame-box"><!-- On item  -->
-								<div class="item-bg-box">
-									<div class="image"><img src="assets/images/desserts/layered-chocolate-cake.png" style="width: 265px; height: 265px;"></div>
-									<div class="info">
-										<h3 class="section-title-border text-uppercase">Chocolate Layer Cake</h3>
-										<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
-										<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
-									</div>
-								</div>
-							</div><!-- OFF item  -->
-							<div class="item-frame-box"><!-- On item  -->
-								<div class="item-bg-box">
-									<div class="image"><img src="assets/images/desserts/cannolies-dozen.png" style="width: 265px; height: 265px;"></div>
-									<div class="info">
-										<h3 class="section-title-border text-uppercase">Cannolies - 12 Pieces</h3>
-										<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
-										<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
-									</div>
-								</div>
-							</div><!-- OFF item  -->
-							<div class="item-frame-box"><!-- On item  -->
-								<div class="item-bg-box">
-									<div class="image"><img src="assets/images/desserts/cookie-cream-brownie.png" style="width: 265px; height: 265px;"></div>
-									<div class="info">
-										<h3 class="section-title-border text-uppercase">Cookie & Cream Brownie</h3>
-										<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
-										<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
-									</div>
-								</div>
-							</div><!-- OFF item  -->
-							<div class="item-frame-box"><!-- On item  -->
-								<div class="item-bg-box">
-									<div class="image"><img src="assets/images/desserts/with_love_brownies.png" style="width: 265px; height: 265px;"></div>
-									<div class="info">
-										<h3 class="section-title-border text-uppercase">With Love Brownie</h3>
-										<p>Lorem ipsum dolor sit a met, con secing elitse aldea orem do eius mod tempor</p>
-										<a class="btn btn-primary-gray menu-wrapper">Order Now</a>
-									</div>
-								</div>
-							</div><!-- OFF item  -->
-						</div><!-- OFF special-menu list  -->
-					</div>
-				</div><!-- Off row  -->
-			</div>
-		</div>
-	</section>
-	<!-- END SPECIAL MENU  -->
+						<ul class="menu-button-filter edit-marginTop40">
+							<li data-filter=".troy" class="tagsort-active">
+								<div class="iconBox-icon center-block"><i class="glyph-icon fa fa-location-arrow"></i></div>
+								<span class="r-name">Troy</span>
+							</li>
+							<li data-filter=".canton" class="">
+								<div class="iconBox-icon center-block"><i class="glyph-icon fa fa-map-marker"></i></div>
+								<span class="r-name">Canton</span>
+							</li>
+						</ul>
 
-	<!-- BEGIN ABOUT US  -->
-	<section id="about" class="about-us" onfocus="aboutFocus();">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h2 class="section-title">About Us</h2>
-					<div class="section-subtitle">Restoring authenticity to food from the ground up is the missioin that drives us. Restauration is the realization of a dream.</div>
-					<hr>
-					<h3 class="section-title-border text-uppercase">Celebrate your happyness with us!</h3>
-					<div class="col-sm-6 pad100">
-						<div class="content">
-							<p class="first-letter">Restourant are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+						<div class="row menu-items-list">
+							<div class="menu-item troy">
+								<section class="contact-section">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6 col-sm-6">
+												<div class="contact-loacation col-md-6">
+													<h3>Address Details</h3>
+													<p><i class="fa fa-map-marker"></i> 1123, E Long Lake Road<br>Troy, MI 48085</p>
+												</div>
+												<div class="contact-drect col-md-6">
+													<h3>Direct Contact</h3>
+													<p><i class="fa fa-phone"></i><a href="tel:248.524.2441">248.524.2441</a></p>
+													<p><i class="fa fa-envelope-o"></i> <a href="mailto:contact@annasdesserts.com">contact@annasdesserts.com</a></p>
+												</div>
+												<div class="contact-socials col-md-6 ">
+													<h3>Join Us On Facebook</h3>
+													<ul class="socials-box">
+														<li><a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa  fa-facebook"></i></div>Anna's Desserts</a></li>
+													</ul>
+												</div>
+											</div>
 
-							<p>After 16 years in the restaurant business, 9 in farming, and several years dedicated to the study of nutrition, we decided now was the right time to take all that experience and synthesize it into a local eatery where people can enjoy exquisite food, support local food producers, and eat the kind of food they can feel good about.</p>
+											<div class="col-md-6 col-sm-6">
+												<form method="post" id="contactform" name="contactform" class="contact-form form-margin" action="assets/mail/contact.php">
+													<div class="col-md-12">
+														<div class="form-group">
+															<!-- Name field !-->
+															<input type="text" id="name" name="name" class="form-control" placeholder="Your Name *">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<!-- Email field !-->
+															<input type="email" id="email" name="email" class="form-control" placeholder="Your Email *">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<!-- Phone field !-->
+															<input type="number" class="form-control" id="phone" name="phone" placeholder="Your Phone">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<!-- Message field !-->
+															<textarea cols="6" rows="5" class="form-control" id="comments" name="comments" placeholder="Your Message"></textarea>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<!-- Submit button !-->
+														<div class="center-position">
+															<input id="submit" type="submit" class="btn btn-primary btn-sm center-button edit-marginTop20" value="Send Message">
+														</div>
+													</div>
+												</form>
+												<div class="col-md-12">
+													<div id="message"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<div class="contact-map">
+									<div class="mapouter">
+										<div class="gmap_canvas">
+											<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1123,%20E%20Long%20Lake%20Road%20troy&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br>
+											<style>
+												.mapouter {
+													position: relative;
+													text-align: right;
+													height: 500px;
+												}
+											</style><a href="https://www.embedgooglemap.net">how to put google map on website</a>
+											<style>
+												.gmap_canvas {
+													overflow: hidden;
+													background: none !important;
+													height: 500px;
+												}
+											</style>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="menu-item canton">
+								<section class="contact-section">
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6 col-sm-6">
+												<div class="contact-loacation col-md-6">
+													<h3>Address Details</h3>
+													<p><i class="fa fa-map-marker"></i> 3700 N Lilley Rd <br>Canton, MI 48187</p>
+												</div>
+												<div class="contact-drect col-md-6">
+													<h3>Direct Contact</h3>
+													<p><i class="fa fa-phone"></i><a href="tel:734.981.0060">734.981.0060</a></p>
+													<p><i class="fa fa-envelope-o"></i> <a href="mailto:contact@annasdesserts.com">contact@annasdesserts.com</a></p>
+												</div>
+												<div class="contact-socials col-md-6 ">
+													<h3>Join Us On Facebook</h3>
+													<ul class="socials-box">
+														<li><a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa  fa-facebook"></i></div>Anna's Desserts</a></li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="col-md-6 col-sm-6">
+												<form method="post" id="contactform" name="contactform" class="contact-form form-margin" action="assets/mail/contact.php">
+													<div class="col-md-12">
+														<div class="form-group">
+															<!-- Name field !-->
+															<input type="text" id="name" name="name" class="form-control" placeholder="Your Name *">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<!-- Email field !-->
+															<input type="email" id="email" name="email" class="form-control" placeholder="Your Email *">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<!-- Phone field !-->
+															<input type="number" class="form-control" id="phone" name="phone" placeholder="Your Phone">
+														</div>
+													</div>
+													<div class="col-md-12">
+														<div class="form-group">
+															<!-- Message field !-->
+															<textarea cols="6" rows="5" class="form-control" id="comments" name="comments" placeholder="Your Message"></textarea>
+														</div>
+													</div>
+													<div class="col-md-12">
+														<!-- Submit button !-->
+														<div class="center-position">
+															<input id="submit" type="submit" class="btn btn-primary btn-sm center-button edit-marginTop20" value="Send Message">
+														</div>
+													</div>
+												</form>
+												<div class="col-md-12">
+													<div id="message"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<div class="contact-map">
+									<div class="mapouter">
+										<div class="gmap_canvas">
+											<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=3700%20N%20Lilley%20road&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br>
+											<style>
+												.mapouter {
+													position: relative;
+													text-align: right;
+													height: 500px;
+												}
+											</style><a href="https://www.embedgooglemap.net">responsive google map embed</a>
+											<style>
+												.gmap_canvas {
+													overflow: hidden;
+													background: none !important;
+													height: 500px;
+												}
+											</style>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="signatured-box">
-							<span class="signatured"><img src="assets/images/signatured.png" alt=""></span>
-						</div>
 					</div>
-					<div class="col-sm-6 pad100">
-						 <div class="content">
-							<img src="https://via.placeholder.com/760x560&text=IMAGE+PLACEHOLDER" alt="">
-						 </div>
-					</div>
-
 				</div>
 			</div>
-		</div>
-	</section>
-	<!-- END ABOUT -->
-
-	<!-- RESERVATION NOW  -->
-	<section id="franchise" class="reservation-now parallax-box">
+		</section>
+		<!--CONTACT US END-->
+		<!-- RESERVATION NOW  -->
+		<!--<section id="franchise" class="reservation-now parallax-box">
 		<div class="mediaSection-box">
 			<div class="container">
 				<div class="row">
@@ -743,70 +958,74 @@
 							<h3 class="title manuscript">Become a Franchise</h3>
 							<h2 class="section-title-border">Let's Join Us Now</h2>
 
-							<form  method="post" id="reservation-form" name="reservation" class="reservation-form form-margin" action="assets/mail/reservation.php">
-								<div class="form-group"> <!-- Name field !-->
-									<input type="text" id="rv-name" name="rv-name" class="form-control" placeholder="Full Name *">
-								</div>
-								<div class="form-group"> <!-- Phone field !-->
-									<input type="number" id="rv-phone" name="rv-phone" class="form-control"  placeholder="Your Phone Number *">
-								</div>
-								<div class="form-group"> <!-- Email field !-->
-									<input type="email" id="rv-email" name="rv-email" class="form-control"  placeholder="Your Email *">
-								</div>
-								<div class="form-group"> <!-- Guests field !-->
-									<input type="text" id="rv-guests" name="rv-guests" class="form-control"  placeholder="Location *">
-								</div>
-								<div class="form-group" style="width: 97%;"> <!-- Date field !-->
-									<input type="textarea" rows="5" id="rv-date" name="rv-date" class="form-control" placeholder="Messsage">
-								</div>
-								<br>
-								<div class="center-button edit-marginTop30" style="display: inline-table;"> <!-- Submit button !-->
-									<input type="submit" name="rv-submit" id="rv-submit" class="btn btn-primary btn-sm" value="Send Now">
-								</div>
-							</form>
-						<div id="rv-message"></div>
-						</div>
+							<form method="post" id="reservation-form" name="reservation" class="reservation-form form-margin" action="assets/mail/reservation.php">
+								<div class="form-group">-->
+		<!-- Name field !-->
+		<!--<input type="text" id="rv-name" name="rv-name" class="form-control" placeholder="Full Name *">
+	</div>
+	<div class="form-group">-->
+		<!-- Phone field !-->
+		<!--<input type="number" id="rv-phone" name="rv-phone" class="form-control" placeholder="Your Phone Number *">
+	</div>
+	<div class="form-group">-->
+		<!-- Email field !-->
+		<!--<input type="email" id="rv-email" name="rv-email" class="form-control" placeholder="Your Email *">
+	</div>
+	<div class="form-group">-->
+		<!-- Guests field !-->
+		<!--<input type="text" id="rv-guests" name="rv-guests" class="form-control" placeholder="Location *">
+	</div>
+	<div class="form-group" style="width: 97%;">-->
+		<!-- Date field !-->
+		<!--<input type="textarea" rows="5" id="rv-date" name="rv-date" class="form-control" placeholder="Messsage">
+	</div>
+	<br>
+	<div class="center-button edit-marginTop30" style="display: inline-table;">-->
+		<!-- Submit button !-->
+		<!--<input type="submit" name="rv-submit" id="rv-submit" class="btn btn-primary btn-sm" value="Send Now">
 					</div>
-					<div class="col-sm-6 col-xs-12">
-						<div class="time-clock-box">
-							<span class="top-frames"></span>
-							<span class="bottom-frames"></span>
-							<ul id="clock">
-							  <li id="sec"></li>
-							  <li id="hour"></li>
-							  <li id="min"></li>
-							</ul>
-						</div>
-					</div>
-				</div><!-- /.row -->
-			</div><!-- /.container -->
+				</form>
+				<div id="rv-message"></div>
+			</div>
 		</div>
-	</section>
-	<!-- END RESERVATION NOW  -->
-
-	<!-- RESERVATION CALL  -->
-	<section class="call-reservation">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="call-box">
-						<h3 class="title">You can also call to have a conversation.</h3>
-						<span class="phone"><a href="tel:248.524.2441">248.524.2441</a>, <a href="tel:734.981.0060">734.981.0060</a></span>
+		<div class="col-sm-6 col-xs-12">
+			<div class="time-clock-box">
+				<span class="top-frames"></span>
+				<span class="bottom-frames"></span>
+				<ul id="clock">
+					<li id="sec"></li>
+					<li id="hour"></li>
+					<li id="min"></li>
+				</ul>
+			</div>
+		</div>
+	</div>-->
+		<!-- /.row -->
+		<!--</div>--><!-- /.container -->
+		<!--</div>
+	</section>-->
+		<!-- END RESERVATION NOW  -->
+		<!-- RESERVATION CALL  -->
+		<section class="call-reservation">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="call-box">
+							<h3 class="title">You can also call to have a conversation.</h3>
+							<span class="phone"><a href="tel:248.524.2441">248.524.2441</a>, <a href="tel:734.981.0060">734.981.0060</a></span>
+						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+		<!-- END RESERVATION CALL -->
+		<!--START FLOATING BUTTON-->
+		<div class="float menu-wrapper pointer">
+			<p style="padding: 5px">ORDER NOW</p>
 		</div>
-	</section>
-	<!-- END RESERVATION CALL -->
-
-	<!--START FLOATING BUTTON-->
-	<div class="float menu-wrapper pointer" >
-		<p style="padding: 5px">ORDER NOW</p>
-	</div>
-	<!--END FLOATING BUTTON-->
-
-	<!--BEGIN FOOTER -->
-	<div id="footer"/>
+		<!--END FLOATING BUTTON-->
+		<!--BEGIN FOOTER -->
+		<div id="footer" />
 	</div>
 	<!-- END FOOTER -->
 
