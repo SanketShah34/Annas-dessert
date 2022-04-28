@@ -2244,7 +2244,7 @@ textarea.form-control {
     border: 2px solid #1b1b1b;
     border-radius: 17px;
     padding: 5px;
-    background-color: #fff;
+    background-color: #0d0f144d;
   }
   .special-menu-slider .item-bg-box .image img {
     width: 100%;
@@ -2255,7 +2255,7 @@ textarea.form-control {
   .special-menu-slider .item-bg-box .section-title-border {
     font-size: 18px;
     font-weight: 400;
-    color: #444034;
+    color: #fff;
     padding-bottom: 0px;
   }
   .special-menu-slider .item-bg-box .info {
@@ -6064,4 +6064,26 @@ color:#c5a86a;
 
 .my-float{
   margin-top:16px;
+}
+
+.order-btn{
+  height: 50px;
+  width: 200px;
+  font-size: 25px;
+  vertical-align: middle;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+.order-btn:hover{
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+  animation:slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
 }
