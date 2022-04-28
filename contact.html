@@ -63,9 +63,9 @@
 							</ul>
 
 							<ul class="socials-box pull-right">
-								<li><a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa fa-facebook"></i></div>Anna's Desserts</a></li>
+								<li><a href="https://www.facebook.com/LoveAnnasDesserts/" target="_blank" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa fa-facebook"></i></div>Anna's Desserts</a></li>
 								<li>
-									<a href="#franchise">
+									<a href="./#franchise">
 										<div class="social-circle-border" style="margin-left:15px; margin-right: 10px; display: inline;">
 											<i class="fa fa-handshake-o"></i>
 										</div>
@@ -95,16 +95,16 @@
 							<nav id="nav-mobile" class="navbar">
 								<ul class="nav navbar-nav">
 									<li>
-										<a href="home">Home</a>
+										<a href="./#home">Home</a>
 									</li>
 									<li>
-										<a href="home#menu">Menu</a>
+										<a href="./#menu">Menu</a>
 									</li>
 
 									<li class="border-none"><a href="home" class="nav-logo"><img src="assets/images/logo.png" alt="" /></a></li>
 									
 									<li><a class="active" href="contact">Contact Us</a></li>
-									<li><a href="home#about">About Us</a></li>
+									<li><a href="./#about">About Us</a></li>
 								</ul>
 
 							</nav>
@@ -293,7 +293,11 @@
 
 					
 							
-
+		<!--START FLOATING BUTTON-->
+		<div class="float menu-wrapper pointer">
+			<p style="padding: 5px">ORDER NOW</p>
+		</div>
+		<!--END FLOATING BUTTON-->
 						
 		<!-- END CONTACT SECTION -->
 
@@ -323,5 +327,66 @@
 		  $("#footer").load("footer"); 
 		});
 	</script>
+	
+	<script type="text/javascript">
+		// MODAL------------
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// When the user clicks on the button, open the modal
+		$('.menu-wrapper').click( function() {
+		  $("#myModal").modal("show");
+		});
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == document.querySelector(".modal")) {
+		    	$('.close').click();
+		    }
+		}
+
+		function grubhub(){
+			window.open(
+			  'https://www.grubhub.com/restaurant/annas-desserts-3700-n-lilley-rd-canton/3201108',
+			  '_blank' // <- This is what makes it open in a new window.
+			);
+		}
+
+		function doordash(){
+			window.open(
+			  "https://www.doordash.com/store/anna's-desserts-canton-22930545/",
+			  '_blank' // <- This is what makes it open in a new window.
+			);
+		}
+
+	</script>
+	
+	<!--BEGIN MODAL-->
+	<div id="myModal" class="modal" data-backdrop="false">
+
+  		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close" id="close" data-dismiss="modal">x</span>
+			<div class="row edit-marginTop30">
+				<div class="col-md-6 col-sm-6" onclick="doordash()">
+				    <div class="iconBox">
+						<div class="iconBox-icon center-block edit-marginBottom30"><i class="glyph-icon flaticon-delivery"></i></div>
+						<div class="iconBox-description">
+							<span class="iconBox-title edit-marginBottom10">Order Now on <img class="foodImg" src="assets/images/doordash.png"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6" onclick="grubhub()">
+				    <div class="iconBox">
+						<div class="iconBox-icon center-block edit-marginBottom30"><i class="glyph-icon flaticon-browser"></i></div>
+						<div class="iconBox-description">
+							<span class="iconBox-title edit-marginBottom10">Order Now on <img class="foodImg" src="assets/images/grubhub.png"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--END MODAL-->
 </body>
 </html>
