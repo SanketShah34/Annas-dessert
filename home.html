@@ -42,7 +42,7 @@
 <link rel="stylesheet" type="text/css" href="assets/skin-colors/dark-skin.css" />
 
 </head>
-<body class="home-page" >
+<body class="home-page onepage">
 	<div id="pageloader">
 	  <div id="page-loader-box"></div>
 		<div id="pageloadDiv" class="page-animate-bottom"></div>
@@ -64,9 +64,9 @@
 							</ul>
 
 							<ul class="socials-box pull-right">
-								<li><a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa fa-facebook"></i></div>Anna's Desserts</a></li>
+								<li><a href="https://www.facebook.com/LoveAnnasDesserts/" target="_blank" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa fa-facebook"></i></div>Anna's Desserts</a></li>
 								<li>
-									<a href="become-a-franchise.html">
+									<a href="#franchise">
 										<div class="social-circle-border" style="margin-left:15px; margin-right: 10px; display: inline;">
 											<i class="fa fa-handshake-o"></i>
 										</div>
@@ -93,20 +93,23 @@
 							</button>
 
 							<!-- BEGIN MAIN MENU -->
-							<nav id="top-menu" class="navbar">
-								<ul class="nav navbar-nav">
+							<nav id="nav-mobile" class="navbar">
+								<ul class="nav navbar-nav" id="nav-mobile-ul">
 									<li>
-										<a class="active" href="#home">Home</a>
+										<a class="active nav-mobile-btn is-closed animated fadeInLeft" data-toggle="offcanvas" href="#home">Home</a>
 									</li>
-									<li><a href="#about">About Us</a></li>
+									<li>
+										<a class="nav-mobile-btn is-closed animated fadeInLeft" data-toggle="offcanvas" href="#menu">Menu</a>
+									</li>
 
 									<!-- From Nav Logo.png -->
-									<li class="border-none"><a href="#home" class="nav-logo"><img src="assets/images/logo.png" alt=""></a></li>
+									<li class="border-none"><a href="./" class="nav-logo"><img src="assets/images/logo.png" alt=""></a></li>
 									<li>
-										<a href="#menu">Menu</a>
+										<a href="contact">Contact Us</a>
 									</li>
-
-									<li><a href="#contact">Contact Us</a></li>
+									<li>
+										<a class="nav-mobile-btn is-closed animated fadeInLeft" data-toggle="offcanvas" href="#about">About Us</a>
+									</li>
 								</ul>
 
 							</nav>
@@ -150,7 +153,6 @@
 							<div class="xpro-item-layer p-intro-box" data-effect="animate({'Y':'20px', zoom:'in', 'delay':'1s', 'duration':'600ms'})">
 								<div class="logointro">
 									<img src="assets/images/logo_intro.png" alt="" />
-									s
 								</div>
 							</div>
 
@@ -167,36 +169,7 @@
 			</div>
 		</section>
 		<!-- END HOME SLIDER -->
-		<!-- BEGIN ABOUT US  -->
-		<section id="about" class="about-us" onfocus="aboutFocus();">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<h2 class="section-title">About Us</h2>
-						<div class="section-subtitle">Restoring authenticity to food from the ground up is the missioin that drives us. Restauration is the realization of a dream.</div>
-						<hr>
-						<h3 class="section-title-border text-uppercase">Celebrate your happyness with us!</h3>
-						<div class="col-sm-6 pad100">
-							<div class="content">
-								<p class="first-letter">Restourant are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-
-								<p>After 16 years in the restaurant business, 9 in farming, and several years dedicated to the study of nutrition, we decided now was the right time to take all that experience and synthesize it into a local eatery where people can enjoy exquisite food, support local food producers, and eat the kind of food they can feel good about.</p>
-							</div>
-							<div class="signatured-box">
-								<span class="signatured"><img src="assets/images/signatured.png" alt=""></span>
-							</div>
-						</div>
-						<div class="col-sm-6 pad100">
-							<div class="content">
-								<img src="https://via.placeholder.com/760x560&text=IMAGE+PLACEHOLDER" alt="">
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END ABOUT -->
+		
 		<!-- MENU OF THE DAY -->
 		<section id="menu" class="menu-list-section">
 			<div class="container">
@@ -753,257 +726,86 @@
 			</div>
 		</section>
 		<!-- END SPECIAL MENU  -->
-		<!--CONTACT US START-->
-		<section id="contact" class="contact-section">
+		<!-- BEGIN ABOUT US  -->
+		<section id="about" class="about-us">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<ul class="menu-button-filter edit-marginTop40">
-							<li data-filter=".troy" class="tagsort-active">
-								<div class="iconBox-icon center-block"><i class="glyph-icon fa fa-location-arrow"></i></div>
-								<span class="r-name">Troy</span>
-							</li>
-							<li data-filter=".canton" class="">
-								<div class="iconBox-icon center-block"><i class="glyph-icon fa fa-map-marker"></i></div>
-								<span class="r-name">Canton</span>
-							</li>
-						</ul>
+						<h2 class="section-title">About Us</h2>
+						<div class="section-subtitle">Restoring authenticity to food from the ground up is the missioin that drives us. Restauration is the realization of a dream.</div>
+						<hr>
+						<h3 class="section-title-border text-uppercase">Celebrate your happyness with us!</h3>
+						<div class="col-sm-6 pad100">
+							<div class="content">
+								<p class="first-letter">Restourant are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
 
-						<div class="row menu-items-list">
-							<div class="menu-item troy">
-								<section class="contact-section">
-									<div class="container">
-										<div class="row">
-											<div class="col-md-6 col-sm-6">
-												<div class="contact-loacation col-md-6">
-													<h3>Address Details</h3>
-													<p><i class="fa fa-map-marker"></i> 1123, E Long Lake Road<br>Troy, MI 48085</p>
-												</div>
-												<div class="contact-drect col-md-6">
-													<h3>Direct Contact</h3>
-													<p><i class="fa fa-phone"></i><a href="tel:248.524.2441">248.524.2441</a></p>
-													<p><i class="fa fa-envelope-o"></i> <a href="mailto:contact@annasdesserts.com">contact@annasdesserts.com</a></p>
-												</div>
-												<div class="contact-socials col-md-6 ">
-													<h3>Join Us On Facebook</h3>
-													<ul class="socials-box">
-														<li><a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa  fa-facebook"></i></div>Anna's Desserts</a></li>
-													</ul>
-												</div>
-											</div>
-
-											<div class="col-md-6 col-sm-6">
-												<form method="post" id="contactform" name="contactform" class="contact-form form-margin" action="assets/mail/contact.php">
-													<div class="col-md-12">
-														<div class="form-group">
-															<!-- Name field !-->
-															<input type="text" id="name" name="name" class="form-control" placeholder="Your Name *">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<!-- Email field !-->
-															<input type="email" id="email" name="email" class="form-control" placeholder="Your Email *">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<!-- Phone field !-->
-															<input type="number" class="form-control" id="phone" name="phone" placeholder="Your Phone">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<!-- Message field !-->
-															<textarea cols="6" rows="5" class="form-control" id="comments" name="comments" placeholder="Your Message"></textarea>
-														</div>
-													</div>
-													<div class="col-md-12">
-														<!-- Submit button !-->
-														<div class="center-position">
-															<input id="submit" type="submit" class="btn btn-primary btn-sm center-button edit-marginTop20" value="Send Message">
-														</div>
-													</div>
-												</form>
-												<div class="col-md-12">
-													<div id="message"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</section>
-
-								<div class="contact-map">
-									<div class="mapouter">
-										<div class="gmap_canvas">
-											<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1123,%20E%20Long%20Lake%20Road%20troy&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br>
-											<style>
-												.mapouter {
-													position: relative;
-													text-align: right;
-													height: 500px;
-												}
-											</style><a href="https://www.embedgooglemap.net">how to put google map on website</a>
-											<style>
-												.gmap_canvas {
-													overflow: hidden;
-													background: none !important;
-													height: 500px;
-												}
-											</style>
-										</div>
-									</div>
-								</div>
+								<p>After 16 years in the restaurant business, 9 in farming, and several years dedicated to the study of nutrition, we decided now was the right time to take all that experience and synthesize it into a local eatery where people can enjoy exquisite food, support local food producers, and eat the kind of food they can feel good about.</p>
 							</div>
-
-
-							<div class="menu-item canton">
-								<section class="contact-section">
-									<div class="container">
-										<div class="row">
-											<div class="col-md-6 col-sm-6">
-												<div class="contact-loacation col-md-6">
-													<h3>Address Details</h3>
-													<p><i class="fa fa-map-marker"></i> 3700 N Lilley Rd <br>Canton, MI 48187</p>
-												</div>
-												<div class="contact-drect col-md-6">
-													<h3>Direct Contact</h3>
-													<p><i class="fa fa-phone"></i><a href="tel:734.981.0060">734.981.0060</a></p>
-													<p><i class="fa fa-envelope-o"></i> <a href="mailto:contact@annasdesserts.com">contact@annasdesserts.com</a></p>
-												</div>
-												<div class="contact-socials col-md-6 ">
-													<h3>Join Us On Facebook</h3>
-													<ul class="socials-box">
-														<li><a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa  fa-facebook"></i></div>Anna's Desserts</a></li>
-													</ul>
-												</div>
-											</div>
-
-											<div class="col-md-6 col-sm-6">
-												<form method="post" id="contactform" name="contactform" class="contact-form form-margin" action="assets/mail/contact.php">
-													<div class="col-md-12">
-														<div class="form-group">
-															<!-- Name field !-->
-															<input type="text" id="name" name="name" class="form-control" placeholder="Your Name *">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<!-- Email field !-->
-															<input type="email" id="email" name="email" class="form-control" placeholder="Your Email *">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<!-- Phone field !-->
-															<input type="number" class="form-control" id="phone" name="phone" placeholder="Your Phone">
-														</div>
-													</div>
-													<div class="col-md-12">
-														<div class="form-group">
-															<!-- Message field !-->
-															<textarea cols="6" rows="5" class="form-control" id="comments" name="comments" placeholder="Your Message"></textarea>
-														</div>
-													</div>
-													<div class="col-md-12">
-														<!-- Submit button !-->
-														<div class="center-position">
-															<input id="submit" type="submit" class="btn btn-primary btn-sm center-button edit-marginTop20" value="Send Message">
-														</div>
-													</div>
-												</form>
-												<div class="col-md-12">
-													<div id="message"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</section>
-
-								<div class="contact-map">
-									<div class="mapouter">
-										<div class="gmap_canvas">
-											<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=3700%20N%20Lilley%20road&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a><br>
-											<style>
-												.mapouter {
-													position: relative;
-													text-align: right;
-													height: 500px;
-												}
-											</style><a href="https://www.embedgooglemap.net">responsive google map embed</a>
-											<style>
-												.gmap_canvas {
-													overflow: hidden;
-													background: none !important;
-													height: 500px;
-												}
-											</style>
-										</div>
-									</div>
-								</div>
+							<div class="signatured-box">
+								<span class="signatured"><img src="assets/images/signatured.png" alt=""></span>
 							</div>
 						</div>
+						<div class="col-sm-6 pad100">
+							 <div class="content">
+								<img src="https://via.placeholder.com/760x560&text=IMAGE+PLACEHOLDER" alt="">
+							 </div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</section>
-		<!--CONTACT US END-->
-		<!-- RESERVATION NOW  -->
-		<!--<section id="franchise" class="reservation-now parallax-box">
-		<div class="mediaSection-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6 col-xs-12">
-						<div class="reservation-form-box">
-							<h3 class="title manuscript">Become a Franchise</h3>
-							<h2 class="section-title-border">Let's Join Us Now</h2>
+		<!-- END ABOUT -->
 
-							<form method="post" id="reservation-form" name="reservation" class="reservation-form form-margin" action="assets/mail/reservation.php">
-								<div class="form-group">-->
-		<!-- Name field !-->
-		<!--<input type="text" id="rv-name" name="rv-name" class="form-control" placeholder="Full Name *">
-	</div>
-	<div class="form-group">-->
-		<!-- Phone field !-->
-		<!--<input type="number" id="rv-phone" name="rv-phone" class="form-control" placeholder="Your Phone Number *">
-	</div>
-	<div class="form-group">-->
-		<!-- Email field !-->
-		<!--<input type="email" id="rv-email" name="rv-email" class="form-control" placeholder="Your Email *">
-	</div>
-	<div class="form-group">-->
-		<!-- Guests field !-->
-		<!--<input type="text" id="rv-guests" name="rv-guests" class="form-control" placeholder="Location *">
-	</div>
-	<div class="form-group" style="width: 97%;">-->
-		<!-- Date field !-->
-		<!--<input type="textarea" rows="5" id="rv-date" name="rv-date" class="form-control" placeholder="Messsage">
-	</div>
-	<br>
-	<div class="center-button edit-marginTop30" style="display: inline-table;">-->
-		<!-- Submit button !-->
-		<!--<input type="submit" name="rv-submit" id="rv-submit" class="btn btn-primary btn-sm" value="Send Now">
-					</div>
-				</form>
-				<div id="rv-message"></div>
+		<!-- RESERVATION NOW  -->
+		<section id="franchise" class="reservation-now parallax-box">
+			<div class="mediaSection-box">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 col-xs-12">
+							<div class="reservation-form-box">
+								<h3 class="title manuscript">Become a Franchise</h3>
+								<h2 class="section-title-border">Let's Join Us Now</h2>
+
+								<form  method="post" id="reservation-form" name="reservation" class="reservation-form form-margin" action="assets/mail/reservation.php">
+									<div class="form-group"> <!-- Name field !-->
+										<input type="text" id="rv-name" name="rv-name" class="form-control" placeholder="Full Name *">
+									</div>
+									<div class="form-group"> <!-- Phone field !-->
+										<input type="number" id="rv-phone" name="rv-phone" class="form-control"  placeholder="Your Phone Number *">
+									</div>
+									<div class="form-group"> <!-- Email field !-->
+										<input type="email" id="rv-email" name="rv-email" class="form-control"  placeholder="Your Email *">
+									</div>
+									<div class="form-group"> <!-- Location field !-->
+										<input type="text" id="rv-location" name="rv-location" class="form-control"  placeholder="Location *">
+									</div>
+									<div class="form-group" style="width: 97%;"> <!-- Enquiry field !-->
+										<input type="textarea" rows="5" id="rv-enquiry" name="rv-enquiry" class="form-control" placeholder="Messsage">
+									</div>
+									<br>
+									<div class="center-button edit-marginTop30" style="display: inline-table;"> <!-- Submit button !-->
+										<input type="submit" name="rv-submit" id="rv-submit" class="btn btn-primary btn-sm" value="Send Now">
+									</div>
+								</form>
+								<div id="rv-message"></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12">
+							<div class="time-clock-box">
+								<span class="top-frames"></span>
+								<span class="bottom-frames"></span>
+								<ul id="clock">
+								  <li id="sec"></li>
+								  <li id="hour"></li>
+								  <li id="min"></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
 			</div>
-		</div>
-		<div class="col-sm-6 col-xs-12">
-			<div class="time-clock-box">
-				<span class="top-frames"></span>
-				<span class="bottom-frames"></span>
-				<ul id="clock">
-					<li id="sec"></li>
-					<li id="hour"></li>
-					<li id="min"></li>
-				</ul>
-			</div>
-		</div>
-	</div>-->
-		<!-- /.row -->
-		<!--</div>--><!-- /.container -->
-		<!--</div>
-	</section>-->
+		</section>
 		<!-- END RESERVATION NOW  -->
 		<!-- RESERVATION CALL  -->
 		<section class="call-reservation">
@@ -1034,6 +836,7 @@
 	<script type="text/javascript" src="assets/js/common/jquery-1.x-git.min.js"></script>
 	<script type="text/javascript" src="assets/js/common.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap-progressbar.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nav.js"></script>
 	<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 
@@ -1076,8 +879,7 @@
 		            slider.forward();
 		            return false;
 		        });
-		    }
-			);
+	       });
 	</script>
 	<script> 
 		$(function(){
@@ -1115,6 +917,13 @@
 			);
 		}
 
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#nav-mobile-ul').onePageNav({
+				filter: ':not(.external)',
+			});
+		});
 	</script>
 	
 	<!--BEGIN MODAL-->

@@ -22,7 +22,7 @@
                 $(this).addClass('active');
 
                 var target = this.hash,
-                    menu = target;
+                  //  menu = target;
                 $target = $(target);
                 $('html, body').stop().animate({
                     'scrollTop': $target.offset().top + 2
@@ -37,8 +37,9 @@
 
         function onScroll(event) {
             var scrollPos = $(document).scrollTop();
-            $('#top-menu a').each(function () {
+            $('#top-menu > ul > li > a').each(function () {
                 var currLink = $(this);
+                console.log(currLink.get(0).innerHTML);
                 var refElement = $(currLink.attr("href"));
                 if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                     $('#top-menu ul li a').removeClass("active");

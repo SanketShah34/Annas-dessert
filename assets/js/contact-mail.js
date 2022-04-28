@@ -23,9 +23,8 @@ var PASTA = window.PASTA || {};
 				name: $('#rv-name').val(),
 				email: $('#rv-email').val(),
 				phone: $('#rv-phone').val(),
-				guests: $('#rv-guests').val(),
-				date: $('#rv-date').val(),
-				time: $('#rv-time').val()
+				location: $('#rv-location').val(),
+				enquiry: $('#rv-enquiry').val()
 			},
 				function(data){
 					document.getElementById('rv-message').innerHTML = data;
@@ -80,48 +79,12 @@ var PASTA = window.PASTA || {};
 		});
 	}
 
-/* ==================================================
-	Newsletter Form Validations
-================================================== */
-	PASTA.Newsletter = function(){
-		$('.newsletter-form').each(function(){
-			var formInstance = $(this);
-			formInstance.submit(function(){
-
-			var action = $(this).attr('action');
-
-			$("#nl-message").slideUp(750,function() {
-			$('#nl-message').hide();
-
-			$('#nl-submit')
-				.after('<img src="assets/images/ajax-loader-bg.gif" class="loader" />')
-				.attr('disabled','disabled');
-
-			$.post(action, {
-				email: $('#nl-email').val()
-			},
-				function(data){
-					document.getElementById('nl-message').innerHTML = data;
-					$('#nl-message').slideDown('slow');
-					$('.newsletter-form img.loader').fadeOut('slow',function(){$(this).remove()});
-					$('#nl-submit').removeAttr('disabled');
-					if(data.match('success') != null) $('.newsletter-form').slideUp('slow');
-
-				}
-			);
-			});
-			return false;
-		});
-		});
-	}
-
   /* ==================================================
    Init Functions
 ================================================== */
 $(document).ready(function(){
 	PASTA.ReservationForm();
 	PASTA.ContactForm();
-	PASTA.Newsletter();
 });
 
 	});

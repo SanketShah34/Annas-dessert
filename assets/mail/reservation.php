@@ -12,8 +12,8 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 $name     = $_POST['name'];
 $email    = $_POST['email'];
 $phone    = $_POST['phone'];
-$guests   = $_POST['guests'];
-$date     = $_POST['date'];
+$location   = $_POST['location'];
+$enquiry     = $_POST['enquiry'];
 
 if(trim($name) == '') {
 	echo '<div class="alert alert-danger alert-dismissable fade in">
@@ -30,7 +30,7 @@ if(trim($name) == '') {
 } else if(trim($guests) == '') {
 		echo '<div class="alert alert-danger alert-dismissable fade in">
 						<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-						Please enter number of guests.
+						Please enter your location.
 					</div>';
 		exit();
 } else if(trim($email) == '') {
@@ -72,7 +72,7 @@ $e_subject = 'Become a Franchise Form';
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "There is a enquiry for a franchise for your Restaurant! Name: $name, Phone: $phone, Guests: $guests, Message: $date" . PHP_EOL . PHP_EOL;
+$e_body = "There is a enquiry for a franchise for your Restaurant! Name: $name, Phone: $phone, Location: $location, Message: $enquiry" . PHP_EOL . PHP_EOL;
 $e_content = "Email: $email" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email: $email or via phone: $phone";
 
@@ -89,8 +89,8 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	// Email has sent successfully, echo a success page.
 
 	echo "<div class='alert alert-success'>";
-	echo "<h3>Reservation successfully fulfilled.</h3><br>";
-	echo "<p>Thank you &nbsp<strong>$name</strong>, your order has been submitted to us.</p>";
+	echo "<h3>Requirements successfully fulfilled.</h3><br>";
+	echo "<p>Thank you &nbsp<strong>$name</strong>, your enquiry for becoming a member has been submitted to us.</p>";
 	echo "</div>";
 
 } else {
