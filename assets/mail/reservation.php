@@ -27,7 +27,7 @@ if(trim($name) == '') {
 						You must enter your phone.
 					</div>';
 		exit();
-} else if(trim($guests) == '') {
+} else if(trim($location) == '') {
 		echo '<div class="alert alert-danger alert-dismissable fade in">
 						<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
 						Please enter your location.
