@@ -582,9 +582,10 @@ img {
   margin-right: 3px;
 }
 .about-us .content img{
-  width: 100%;
-  height: auto;
+  width: 70%;
+  height: 70%;
   display: block;
+  margin: auto;
 }
 .special-menu {
   padding: 5px 0;
