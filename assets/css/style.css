@@ -6043,20 +6043,49 @@ color:#c5a86a;
 
 
 /*Floating button*/
-.float{
-  position:fixed;
-  width:80px;
-  height:60px;
-  bottom:40px;
-  right:40px;
-  background-color: red;
-  color:white;
-  border-radius:50px 50px 0px 50px;
-  text-align:center;
-  font-size:28px;
-  box-shadow: 2px 2px 3px #999;
-  z-index:100;
+.float {
+    position: fixed;
+    width: 100px;
+    height: 60px;
+    bottom: 30px;
+    right: 40px;
+    background-color: #c5a86a;
+    color: white;
+    border-radius: 50px 50px 0px 50px;
+    text-align: center;
+    font-size: 28px;
+    z-index: 100;
+    border: white;
+    border-style: solid;
 }
+.float-ripple {
+    position: fixed;
+    width: 100px;
+    height: 60px;
+    bottom: 30px;
+    right: 40px;
+    background-color: #c5a86a;
+    color: white;
+    border-radius: 50px 50px 0px 50px;
+    text-align: center;
+    font-size: 28px;
+    z-index: 90;
+    animation: ripple 1.5s ease-out infinite;
+}
+
+    .float-ripple::before {
+        position: fixed;
+        width: 100px;
+        height: 60px;
+        bottom: 30px;
+        right: 40px;
+        background-color: #c5a86a;
+        border-radius: 50px 50px 0px 50px;
+        text-align: center;
+        font-size: 28px;
+        z-index: 90;
+        animation-delay: 0.2s;
+    }
 
 .pointer{
   cursor: pointer;
@@ -6153,3 +6182,18 @@ color:#c5a86a;
 .btn-special:active {
   
 }
+
+/*Order Now animation*/
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
