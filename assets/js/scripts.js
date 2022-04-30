@@ -511,7 +511,7 @@ $.fn.boom = function(e) {
         
         shape.css({
             top: e.pageY - btn.offset().top - 100,
-            left: e.pageX - btn.offset().left - 20,
+            left: e.pageX - btn.offset().left,
             'transform': 'scale(0.'+scale+')',
             'transition': sec + 'ms',
             'fill': colors[randBG]
