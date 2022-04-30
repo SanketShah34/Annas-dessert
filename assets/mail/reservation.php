@@ -76,7 +76,7 @@ $e_greetings = "Hi," .PHP_EOL .PHP_EOL;
 $e_greetings_new = "Hope you are doing well." .PHP_EOL .PHP_EOL;
 $e_body = "There is a enquiry for a franchise for your Restaurant! Name: $name, Phone: $phone, Location: $location, Message: $enquiry" . PHP_EOL . PHP_EOL;
 $e_content = "Email: $email" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email: $email or via phone: $phone";
+$e_reply = "You can contact $name via email: $email or via phone: $phone". PHP_EOL . PHP_EOL;
 $e_regards = "Thanks and Regards,". PHP_EOL;
 $e_sign_name = "Anna's Desserts" .PHP_EOL;
 
