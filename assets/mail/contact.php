@@ -51,7 +51,7 @@ $address = "sshahsanket31@gmail.com";
 // i.e. The standard subject will appear as, "You've been contacted by John Doe."
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
-$e_subject = 'Contact Form';
+$e_subject = 'Contact Form - ' .$name ;
 
 
 
@@ -65,8 +65,10 @@ $e_reply = "You can contact $name via email: $email or via phone: $phone";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
-$headers = "From: $email" . PHP_EOL;
-$headers .= "Reply-To: $email" . PHP_EOL;
+$email_header = "inquiry@crispythinns.com";
+
+$headers = "From: $email_header" . PHP_EOL;
+$headers .= "Reply-To: $email_header" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
@@ -76,7 +78,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	// Email has sent successfully, echo a success page.
 
 	echo "<div class='alert alert-success'>";
-	echo "<h3>Email Sent Successfully.</h3><br>";
+	echo "<h3 style='color:black;'>Email Sent Successfully.</h3><br>";
 	echo "<p>Thank you &nbsp<strong>$name</strong>, your message has been submitted to us.</p>";
 	echo "</div>";
 
