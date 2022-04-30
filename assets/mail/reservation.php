@@ -72,11 +72,15 @@ $e_subject = 'Become a Franchise Form - '.$name;
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
+$e_greetings = "Hi," .PHP_EOL .PHP_EOL;
+$e_greetings_new = "Hope you are doing well." .PHP_EOL .PHP_EOL;
 $e_body = "There is a enquiry for a franchise for your Restaurant! Name: $name, Phone: $phone, Location: $location, Message: $enquiry" . PHP_EOL . PHP_EOL;
 $e_content = "Email: $email" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email: $email or via phone: $phone";
+$e_regards = "Thanks and Regards,". PHP_EOL;
+$e_sign_name = "Anna's Desserts" .PHP_EOL;
 
-$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+$msg = wordwrap( $e_greetings . $e_greetings_new . $e_body . $e_content . $e_reply . $e_regards . $e_sign_name , 70 );
 
 $email_header = "inquiry@crispythinns.com";
 
