@@ -57,7 +57,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "sshahsanket31@gmail.com";
+$address = "contact@annasdesserts.com";
 
 
 // Configuration option.
@@ -74,7 +74,7 @@ $e_subject = 'Become a Franchise Form - '.$name;
 
 $e_greetings = "Hi," .PHP_EOL .PHP_EOL;
 $e_greetings_new = "Hope you are doing well." .PHP_EOL .PHP_EOL;
-$e_body = "There is a enquiry for a franchise for your Restaurant! Name: $name, Phone: $phone, Location: $location, Message: $enquiry" . PHP_EOL . PHP_EOL;
+$e_body = "There is a enquiry for a franchise for your Restaurant!" .PHP_EOL ."Name: $name," .PHP_EOL ."Phone: $phone," .PHP_EOL ."Location: $location," .PHP_EOL ."Message: $enquiry" . PHP_EOL . PHP_EOL;
 $e_content = "Email: $email" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email: $email or via phone: $phone". PHP_EOL . PHP_EOL;
 $e_regards = "Thanks and Regards,". PHP_EOL;
@@ -84,7 +84,7 @@ $msg = wordwrap( $e_greetings . $e_greetings_new . $e_body . $e_content . $e_rep
 
 $email_header = "inquiry@crispythinns.com";
 
-$headers = "From: $email_header" . PHP_EOL;
+$headers = "From: Anna's Desserts $email_header" . PHP_EOL;
 $headers .= "Reply-To: $email_header" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;

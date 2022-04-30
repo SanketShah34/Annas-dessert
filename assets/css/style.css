@@ -6122,3 +6122,34 @@ color:#c5a86a;
     font-size: 16px;
   }
 }
+
+.shape {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: scale(0.8);
+}
+.cir {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 5;
+}
+.btn-special {
+}
+.btn-special:active, .btn-special:hover, .btn-special:focus {
+  outline: none !important;
+  color: white;
+} 
+.btn-particles {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  color: #eee;
+  font-family: monospace;
+  z-index: 5;
+/*  filter: url(#gooeyness); */
+}
+.btn-special:active {
+  
+}

@@ -44,7 +44,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "sshahsanket31@gmail.com";
+$address = "contact@annasdesserts.com";
 
 
 // Configuration option.
@@ -65,13 +65,13 @@ $e_body = "You have been contacted by $name, their additional message is as foll
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email: $email or via phone: $phone". PHP_EOL . PHP_EOL;
 $e_regards = "Thanks and Regards,". PHP_EOL;
-$e_sign_name = "Anna's Desserts" .PHP_EOL;
+$e_sign_name = "Anna's Desserts";
 
 $msg = wordwrap( $e_greetings . $e_greetings_new . $e_body . $e_content . $e_reply . $e_regards . $e_sign_name , 70 );
 
 $email_header = "inquiry@crispythinns.com";
 
-$headers = "From: $email_header" . PHP_EOL;
+$headers = "From: Anna's Desserts $email_header" . PHP_EOL;
 $headers .= "Reply-To: $email_header" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
