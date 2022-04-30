@@ -5958,7 +5958,7 @@ color:#c5a86a;
 
 /* The Close Button */
 .close {
-  color: red;
+  color: #fff !important;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -5967,7 +5967,7 @@ color:#c5a86a;
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #fff !important;
   text-decoration: none;
   cursor: pointer;
 }
