@@ -7,13 +7,9 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html
 </IfModule>
 
-<IfModule LiteSpeed> 
-CacheEnable public /
-</IfModule> 
-
-<IfModule LiteSpeed> 
-CacheLookup public on
-</IfModule> 
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
 
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
