@@ -565,10 +565,10 @@ section {
   background: #fff;
   overflow: hidden;
 }
-img {
+/*img {
   width: 100%;
   height: auto;
-}
+}*/
 .content {
   padding: 20px 10px;
 }
