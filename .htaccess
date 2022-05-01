@@ -1,7 +1,16 @@
 <IfModule mod_rewrite.c>
 DirectoryIndex home.html
+AddType text/cache-manifest .appcache
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html
 </IfModule>
+
+<IfModule LiteSpeed> 
+CacheEnable public /
+</IfModule> 
+
+<IfModule LiteSpeed> 
+CacheLookup public on
+</IfModule> 
