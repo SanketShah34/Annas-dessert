@@ -1,0 +1,33 @@
+CACHE MANIFEST
+# v1.0 : 30-04-2022
+ 
+CACHE:
+# pages
+home.html
+footer.html
+contact.html
+ 
+# styles & scripts
+assets/css/style.css
+assets/css/bootstrap.css
+assets/css/bootstrap.min.css
+assets/css/style.css
+assets/css/bootstrap-progressbar.css
+assets/css/font-awesome.css
+assets/css/font-awesome.min.css
+assets/css/food-flaticon.css
+assets/css/owl.carousel.css
+assets/js/common.js
+assets/js/owl.carousel.min.js
+assets/js/scripts.js
+assets/js/common/bootstrap.min.js
+ 
+# images
+assets/images/logo.png
+assets/images/doordash.png
+assets/images/grubhub.png
+assets/images/fav_touch_icon/favicon.ico
+ 
+NETWORK:
+assets/mail/reservation.php
+assets/mail/contact.php
