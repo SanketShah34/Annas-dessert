@@ -76,7 +76,7 @@
 
 .xpro-slider-container .p-text-box {
   opacity:0;
-  top:70%;
+  top:60%;
   left:0px;
   right:0px;
   margin:auto;
@@ -220,13 +220,14 @@
  @media (max-width: 768px) {
    .logointro {
      width: 110px;
+     top: 35%;
    }
    .xpro-slider-container .p-intro-box {
-     top:25%;
+     top:35%;
    }
 
    .xpro-slider-container .p-text-box {
-     top:70%;
+     top:50%;
    }
 
    .xp-headtext {
@@ -321,7 +322,7 @@
       display: none;
     }
     .video-background .p-text-box {
-      top:55%;
+      top:60%;
     }
     .video-background .xp-headtext {
         padding:5px 5px;
@@ -335,7 +336,7 @@
 @media (min-width: 1200px){
 
   .logointro {
-    width: 270px;
+    width: 200px;
   }
 
 }

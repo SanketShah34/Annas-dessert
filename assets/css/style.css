@@ -121,7 +121,7 @@ code {
   margin-right: auto;
 }
 .section-title:after {
-  content: url(../images/title-decor.png);
+  content: url('../images/title-decor.png');
   display: block;
   position: relative;
   height: 3px;
@@ -129,7 +129,7 @@ code {
   margin: 15px auto;
 }
  .white-decor:after {
-  content: url(../images/title-decor-white.png);
+  content: url('../images/title-decor-white.png');
 }
 .section-title-border:after {
   content: "";
@@ -1465,7 +1465,7 @@ textarea.form-control {
   }
 .pasta-item-slide .owl-nav .owl-button-icons {
     margin: auto;
-    background-image: url(../images/default-black.png);
+    background-image: url('../images/default-black.png');
     background-repeat: no-repeat;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.58);
@@ -2214,9 +2214,9 @@ textarea.form-control {
   display: -webkit-flex;
 }
 .special-menu {
-    background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url(..images/content/cpecial-menu-parallax.jpg);
-    background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url(../images/content/cpecial-menu-parallax.jpg);
-    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url(../images/content/cpecial-menu-parallax.jpg);
+    background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url('..images/content/cpecial-menu-parallax.jpg');
+    background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url('../images/content/cpecial-menu-parallax.jpg');
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url('../images/content/cpecial-menu-parallax.jpg');
   }
   .special-menu .mediaSection-box .section-title-border {
     font-size: 40px;
@@ -2333,19 +2333,19 @@ textarea.form-control {
   }
   .owl-nav .owl-button-icons {
     margin: auto;
-    background-image: url(../images/default.png);
+    background-image: url('../images/default.png');
     background-repeat: no-repeat;
     position: absolute;
   }
   .owl-chef-team-slider .owl-nav .owl-button-icons {
     margin: auto;
-    background-image: url(../images/default-black.png);
+    background-image: url('../images/default-black.png');
     background-repeat: no-repeat;
     position: absolute;
   }
   .owl-featured-recipe .owl-nav .owl-button-icons {
     margin: auto;
-    background-image: url(../images/default-black.png);
+    background-image: url('../images/default-black.png');
     background-repeat: no-repeat;
     position: absolute;
   }
@@ -2583,9 +2583,9 @@ textarea.form-control {
     padding: 0;
   }
 .reservation-now {
-    background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url(..images/content/reservation-parallax.jpg);
-    background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url(../images/content/reservation-parallax.jpg);
-    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url(../images/content/reservation-parallax.jpg);
+    background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url('..images/content/reservation-parallax.jpg');
+    background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url('../images/content/reservation-parallax.jpg');
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0, 0.6) 100%), url('../images/content/reservation-parallax.jpg');
   }
   .reservation-now .mediaSection-box .section-title-border {
     font-size: 40px;
@@ -2731,7 +2731,7 @@ textarea.form-control {
   width: 280px;
   height: 280px;
   margin: 20px auto 0 auto;
-  background: url(../images/clock/clockface.png);
+  background: url('../images/clock/clockface.png');
   background-repeat: no-repeat;
   list-style: none;
 }
@@ -2745,17 +2745,17 @@ textarea.form-control {
 }
 
 #sec {
-  background: url(../images/clock/sechand.png);
+  background: url('../images/clock/sechand.png');
   z-index: 3;
 }
 
 #min {
-  background: url(../images/clock/minhand.png);
+  background: url('../images/clock/minhand.png');
   z-index: 2;
 }
 
 #hour {
-  background: url(../images/clock/hourhand.png);
+  background: url('../images/clock/hourhand.png');
   z-index: 1;
 }
 .top-frames:before {
@@ -2815,9 +2815,9 @@ textarea.form-control {
 }
 
 .testimonials {
-  background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(..images/content/testimonials-parallax.jpg);
-  background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/content/testimonials-parallax.jpg);
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/content/testimonials-parallax.jpg);
+  background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url('..images/content/testimonials-parallax.jpg');
+  background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url('../images/content/testimonials-parallax.jpg');
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url('../images/content/testimonials-parallax.jpg');
   }
   .testimonials .thumb-section {
     display: inline-block;
@@ -3160,9 +3160,9 @@ textarea.form-control {
   padding-bottom: 43px
 }
 .best-service {
-  background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.64) 0%,rgba(0, 0, 0, 0.79) 100%), url(..images/content/service-parallax.jpg);
-  background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.64) 0%,rgba(0, 0, 0, 0.79) 100%), url(../images/content/service-parallax.jpg);
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.64) 0%,rgba(0, 0, 0, 0.79) 100%), url(../images/content/service-parallax.jpg);
+  background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.64) 0%,rgba(0, 0, 0, 0.79) 100%), url('..images/content/service-parallax.jpg');
+  background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.64) 0%,rgba(0, 0, 0, 0.79) 100%), url('../images/content/service-parallax.jpg');
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.64) 0%,rgba(0, 0, 0, 0.79) 100%), url('../images/content/service-parallax.jpg');
 }
 .best-service {
   height: auto;
@@ -3254,9 +3254,9 @@ textarea.form-control {
     height: 100%;
   }
 .menu-page .background-img {
-  background-image: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255, 255, 255, 0.64) 25%,rgba(255, 255, 255, 0.8) 50%,rgba(255, 255, 255, 0.73) 75%,rgba(255,255,255,0) 100%), url(..images/menu-standart-background.png);
-  background-image: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255, 255, 255, 0.64) 25%,rgba(255, 255, 255, 0.8) 50%,rgba(255, 255, 255, 0.73) 75%,rgba(255,255,255,0) 100%), url(../images/menu-standart-background.png);
-  background-image: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255, 255, 255, 0.64) 25%,rgba(255, 255, 255, 0.8) 50%,rgba(255, 255, 255, 0.73) 75%,rgba(255,255,255,0) 100%), url(../images/menu-standart-background.png);
+  background-image: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255, 255, 255, 0.64) 25%,rgba(255, 255, 255, 0.8) 50%,rgba(255, 255, 255, 0.73) 75%,rgba(255,255,255,0) 100%), url('..images/menu-standart-background.png');
+  background-image: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255, 255, 255, 0.64) 25%,rgba(255, 255, 255, 0.8) 50%,rgba(255, 255, 255, 0.73) 75%,rgba(255,255,255,0) 100%), url('../images/menu-standart-background.png');
+  background-image: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255, 255, 255, 0.64) 25%,rgba(255, 255, 255, 0.8) 50%,rgba(255, 255, 255, 0.73) 75%,rgba(255,255,255,0) 100%), url('../images/menu-standart-background.png');
 
   /*background: url(../images/menu-standart-background.png);*/
   background-repeat: no-repeat;
@@ -4129,9 +4129,9 @@ textarea.form-control {
   max-height: 600px;
 }
 .footer-background{
-  background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(..images/content/footer_background.jpg);
-  background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/content/footer_background.jpg);
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url(../images/content/footer_background.jpg);
+  background-image: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url('..images/content/footer_background.jpg');
+  background-image: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url('../images/content/footer_background.jpg');
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.57) 0%,rgba(0, 0, 0, 0.87) 100%), url('../images/content/footer_background.jpg');
   background-color: #111;
   background-position: center;
   background-repeat: no-repeat;
@@ -5115,7 +5115,7 @@ color:#c5a86a;
   }
   .section-title:after {
     content:"";
-    background: url(../images/mob-title-decor@2x.png) top center;
+    background: url('../images/mob-title-decor@2x.png') top center;
     background-size: contain;
     width: 355px;
     height: 34px;
@@ -5123,7 +5123,7 @@ color:#c5a86a;
   }
   .white-decor:after {
     content:"";
-    background: url(../images/mob-title-decor-white@2x.png) top center;
+    background: url('../images/mob-title-decor-white@2x.png') top center;
     background-size: contain;
     width: 355px;
     height: 34px;
@@ -5451,7 +5451,7 @@ color:#c5a86a;
   }
   .section-title:after {
     content:"";
-    background: url(../images/mob-title-decor@2x.png) top center;
+    background: url('../images/mob-title-decor@2x.png') top center;
     background-size: contain;
     width: 291px;
     height: 28px;
@@ -5459,7 +5459,7 @@ color:#c5a86a;
   }
   .white-decor:after {
     content:"";
-    background: url(../images/mob-title-decor-white@2x.png) top center;
+    background: url('../images/mob-title-decor-white@2x.png') top center;
     background-size: contain;
     width: 291px;
     height: 28px;
@@ -6189,5 +6189,29 @@ color:#c5a86a;
         opacity: 0;
         transform: scale(2);
     }
+}
+
+
+
+/*Slider image dynamic*/
+
+@media only screen and (max-width: 768px) {
+  .dynamic-image-1{
+    background-image:url('../images/slide/01_preview1600x800-mob.jpg');
+  }
+
+  .dynamic-image-2{
+    background-image:url('../images/slide/02_preview1600x800-mob.jpg');
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .dynamic-image-1{
+    background-image:url('../images/slide/01_preview1600x800.jpg');
+  }
+
+  .dynamic-image-2{
+    background-image:url('../images/slide/02_preview1600x800.jpg');
+  }
 }
 
