@@ -164,6 +164,7 @@ code {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  text-shadow: rgb(0 0 0) 5px 5px 15px;
 }
 .edit-padding0 {
   padding: 0;
@@ -768,8 +769,8 @@ section {
   }
 .btn-primary {
   color: #1b1b1b;
-  background-color: #c5a86a;
-  border-color: #c5a86a;
+  background-color: #c5a86a !important;
+  border-color: #c5a86a !important;
 }
 .btn-primary:hover {
     color: #1b1b1b;
@@ -2495,6 +2496,9 @@ textarea.form-control {
 .menu-list-section .menu-items-list .menu-item .desc {
   display: inline-block;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-items-list {
   -webkit-transition: all 0.8s;
@@ -6212,6 +6216,10 @@ color:#c5a86a;
 
   .dynamic-image-2{
     background-image:url('../images/slide/02_preview1600x800.jpg');
+  }
+
+  .mob-button-active-modal{
+    display: none;
   }
 }
 
