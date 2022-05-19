@@ -64,7 +64,7 @@ $address = "contact@annasdesserts.com";
 // i.e. The standard subject will appear as, "You've been contacted by John Doe."
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
-$e_subject = 'Become a Franchise Form - '.$name;
+$e_subject = 'Become a Franchise - '.$name;
 
 
 
@@ -82,10 +82,10 @@ $e_sign_name = "Anna's Desserts" .PHP_EOL;
 
 $msg = wordwrap( $e_greetings . $e_greetings_new . $e_body . $e_content . $e_reply . $e_regards . $e_sign_name , 70 );
 
-$email_header = "inquiry@crispythinns.com";
+$email_header = "inquiry@annasdesserts.com";
 
 $headers = "From: Anna's Desserts $email_header" . PHP_EOL;
-$headers .= "Reply-To: $email_header" . PHP_EOL;
+$headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
@@ -95,7 +95,7 @@ if(mail($address, $e_subject, $msg, $headers)) {
 	// Email has sent successfully, echo a success page.
 
 	echo "<div class='alert alert-success'>";
-	echo "<h3>Requirements successfully fulfilled.</h3><br>";
+	echo "<h3 style="color:#000000;">Requirements successfully fulfilled.</h3><br>";
 	echo "<p>Thank you &nbsp<strong>$name</strong>, your enquiry for becoming a member has been submitted to us.</p>";
 	echo "</div>";
 

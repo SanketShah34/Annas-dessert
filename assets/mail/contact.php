@@ -69,10 +69,10 @@ $e_sign_name = "Anna's Desserts";
 
 $msg = wordwrap( $e_greetings . $e_greetings_new . $e_body . $e_content . $e_reply . $e_regards . $e_sign_name , 70 );
 
-$email_header = "inquiry@crispythinns.com";
+$email_header = "inquiry@annasdesserts.com";
 
 $headers = "From: Anna's Desserts $email_header" . PHP_EOL;
-$headers .= "Reply-To: $email_header" . PHP_EOL;
+$headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
