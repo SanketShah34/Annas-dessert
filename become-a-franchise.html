@@ -4,9 +4,21 @@
 <meta charset="utf-8" />
 <!-- Page Title -->
 <title>Become A Franchise - Anna's Desserts</title>
-<meta name="keywords" content="pasta, responsive, modern html5 template, bootstrap, css3, food, reservation" />
-<meta name="description" content="Pasta - Restaurant HTML5 Responsive Template for Restaurants and food" />
-<meta name="author" content="Colorful Design - www.bycolorfuldesign.com" />
+<meta name="keywords" content="desserts, cake, cheesecake, responsive, food, cookies, franchise, celebrate, baloons, joy, enjoy, dessert definition, desserts list, desserts recipes, dessert near me, dessert list" />
+<meta name="description" content="Anna's Desserts - Here to provide you with our delicious desserts" />
+<meta name="author" content="Sanket Shah" />
+<meta http-equiv="Cache-control" content="public">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<meta name="subject" content="Deliver delicious desserts - Anna's Desserts">
+<meta name="revised" content="Sunday, May 1st, 2022, 2:02 am">
+<meta name="summary" content="Anna's Desserts - Here to provide you with our delicious desserts">
+<meta name="Classification" content="Business">
+<meta name="url" content="https://annasdesserts.com">
+<meta name="identifier-URL" content="https://annasdesserts.com">
+<meta name="pagename" content="Anna's Desserts">
+<meta name="coverage" content="Worldwide">
+<meta name="distribution" content="Global">
+<meta name="rating" content="General">
 
 <!-- Mobile Meta Tag -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -44,10 +56,10 @@
 
 </head>
 <body class="default-page" >
-	<div id="pageloader">
+	<!-- <div id="pageloader">
 	  <div id="page-loader-box"></div>
 		<div id="pageloadDiv" class="page-animate-bottom"></div>
-	</div>
+	</div> -->
 	<!--  WRAPPER -->
 	<div id="wrapper">
 		<!-- Mobile menu overlay background -->
@@ -65,7 +77,17 @@
 							</ul>
 
 							<ul class="socials-box pull-right">
-								<li><a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa fa-facebook"></i></div>Anna's Desserts</a></li>
+								<li>
+									<a href="https://www.facebook.com/LoveAnnasDesserts/" style="display: flex;"><div class="social-circle-border" style="margin-right: 10px;"><i class="fa fa-facebook"></i></div>Anna's Desserts</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="social-circle-border" style="margin-left:15px; margin-right: 10px; display: inline;">
+											<i class="fa fa-handshake-o"></i>
+										</div>
+										Become a Franchise
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -87,21 +109,23 @@
 
 							<!-- BEGIN MAIN MENU -->
 							<nav id="top-menu" class="navbar">
-								<ul class="nav navbar-nav">
+								<ul class="nav navbar-nav" id="nav-mobile-ul">
 									<li>
-										<a href="home.html#home">Home</a>
+										<a class="nav-mobile-btn is-closed animated fadeInLeft" data-toggle="offcanvas" href="./#home" style="text-shadow: rgb(0 0 0) 5px 5px 15px;">Home</a>
 									</li>
-									
-									<li><a href="home.html#about">About Us</a></li>
+									<li>
+										<a class="nav-mobile-btn is-closed animated fadeInLeft" data-toggle="offcanvas" href="./#menu" style="text-shadow: rgb(0 0 0) 5px 5px 15px;">Menu</a>
+									</li>
 
 									<!-- From Nav Logo.png -->
-									<li class="border-none"><a href="#home" class="nav-logo"><img src="assets/images/logo.png" alt=""></a></li>
+									<li class="border-none"><a href="./#home" class="nav-logo"><img src="assets/images/logo.png" alt=""></a></li>
 									<li>
-										<a href="home.html#menu">Menu</a>
+										<a class="nav-mobile-btn is-closed animated fadeInLeft" data-toggle="offcanvas" href="./#about" style="text-shadow: rgb(0 0 0) 5px 5px 15px;">Celebrate</a>
 									</li>
-									<li><a href="home.html#contact">Contact Us</a></li>
+									<li>
+										<a class="nav-mobile-btn is-closed animated fadeInLeft" data-toggle="offcanvas" href="./#contact" style="text-shadow: rgb(0 0 0) 5px 5px 15px;">Contact Us</a>
+									</li>
 								</ul>
-
 							</nav>
 							<!-- END MAIN MENU -->
 
@@ -119,7 +143,7 @@
 				<div class="webkit-and-moz-overlay-background">
 					<div class="container">
 						<div class="center-section">
-							<h2 class="section-title-border whiteTitleBorder">Become a Franchise</h2>
+							<h2 class="section-title-border whiteTitleBorder" style="text-shadow: rgb(0 0 0) 5px 5px 15px;">Become a Franchise</h2>
 							<div class="section-subtitle">Become a partner in our beautiful journey.<br>"We don't dream about success, we work for it."</div>
 						</div>
 					</div>
@@ -131,7 +155,7 @@
 		<!-- BEGIN SITE MAP -->
 		<div class="site-map">
 			<div class="container">
-				<a href="home.html#home">Home</a>
+				<a href="./">Home</a>
 				<a href="#">Become a Franchise</a>
 			</div>
 		</div>
@@ -173,7 +197,7 @@
 								<div class="col-md-3 col-sm-3"></div>
 								<div class="col-md-6 col-sm-6">
 									<div class="form-group"> <!-- Guests field !-->
-										<input type="text" id="rv-guests" name="rv-guests" class="form-control"  placeholder="Location *">
+										<input type="text" id="rv-location" name="rv-location" class="form-control" placeholder="Location *">
 									</div>
 								</div>
 							</div>
@@ -182,7 +206,7 @@
 								<div class="col-md-6">
 									<div class="form-group"> <!-- Date field !-->
 										<div class="form-group" id="dp-date">
-											<input type="textarea" rows="5" id="rv-date" name="rv-date" class="form-control" placeholder="Messsage">
+											<input type="textarea" rows="5" id="rv-enquiry" name="rv-enquiry" class="form-control" placeholder="Messsage">
 										</div>
 									</div>
 								</div>
@@ -213,11 +237,19 @@
 		</section>
 		<!-- END RESERVATION CALL  -->
 
+		<!--START FLOATING BUTTON-->
+		<div class="float menu-open pointer">
+			<p style="padding: 3px">ORDER NOW</p>
+		</div>
+		<div class="float-ripple menu-open pointer">
+		</div>
+		<!--END FLOATING BUTTON-->
 		<!--BEGIN FOOTER -->
 		<div id="footer"/>
 		<!-- END FOOTER -->
 	</div>
 	<!-- END WRAPPER -->
+
 	<!-- Libs -->
 	<script type="text/javascript" src="assets/js/common/jquery-1.x-git.min.js"></script>
 	<script type="text/javascript" src="assets/js/common.js"></script>
@@ -231,11 +263,75 @@
 	<script type="text/javascript" src="assets/js/xpro/js/slider.js"></script>
 	<!-- Template Scripts -->
 	<script type="text/javascript" src="assets/js/scripts.js"></script>
+	<!-- Contact Script and Map -->
+	
 	<script type="text/javascript" src="assets/js/contact-mail.js"></script>
 	<script> 
 		$(function(){
 		  $("#footer").load("footer"); 
 		});
 	</script>
+
+	<!-- Libs -->
+	<script type="text/javascript">
+		// MODAL------------
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// When the user clicks on the button, open the modal
+		$('.menu-open').click( function() {
+		  $("#myModal").modal("show");
+		});
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == document.querySelector(".modal")) {
+		    	$('.close').click();
+		    }
+		}
+
+		function grubhub(){
+			window.open(
+			  'https://www.grubhub.com/restaurant/annas-desserts-3700-n-lilley-rd-canton/3201108',
+			  '_blank' // <- This is what makes it open in a new window.
+			);
+		}
+
+		function doordash(){
+			window.open(
+			  "https://www.doordash.com/store/anna's-desserts-canton-22930545/",
+			  '_blank' // <- This is what makes it open in a new window.
+			);
+		}
+
+	</script>
+
+	<!--BEGIN MODAL-->
+	<div id="myModal" class="modal" data-backdrop="false">
+
+  		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close" id="close" data-dismiss="modal">x</span>
+			<div class="row edit-marginTop30">
+				<div class="col-md-6 col-sm-6" onclick="doordash()">
+				    <div class="iconBox">
+						<div class="iconBox-icon center-block edit-marginBottom30"><i class="glyph-icon flaticon-delivery"></i></div>
+						<div class="iconBox-description">
+							<span class="iconBox-title edit-marginBottom10">Order Now on <img class="foodImg" src="assets/images/doordash.png"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6" onclick="grubhub()">
+				    <div class="iconBox">
+						<div class="iconBox-icon center-block edit-marginBottom30"><i class="glyph-icon flaticon-browser"></i></div>
+						<div class="iconBox-description">
+							<span class="iconBox-title edit-marginBottom10">Order Now on <img class="foodImg" src="assets/images/grubhub.png"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--END MODAL-->
 </body>
 </html>

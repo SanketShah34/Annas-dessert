@@ -394,12 +394,34 @@
 
                 var filterValue = $(this).attr('data-filter');
 
-                $grid.isotope({ filter: filterValue })
-                    ;
+                $grid.isotope({ filter: filterValue });
+
+                $('html, body').animate({
+                    scrollTop: $("#menu").offset().top
+               });
             }
             );
         };
 
+        $("#troy").click(function() {
+            $("#troy-contact").show();
+            $("#canton-contact").hide();
+            $("#canton").removeClass('tagsort-contact-active');
+            $("#troy").addClass('tagsort-contact-active');
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+           }); 
+        });
+
+        $("#canton").click(function() {
+            $("#troy-contact").hide();
+            $("#canton-contact").show();
+            $("#troy").removeClass('tagsort-contact-active');
+            $("#canton").addClass('tagsort-contact-active');
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+           }); 
+        });
 
         // Header background image //
         $(".header-background").each(function () {

@@ -583,8 +583,6 @@ section {
   margin-right: 3px;
 }
 .about-us .content img{
-  width: 70%;
-  height: 70%;
   display: block;
   margin: auto;
 }
@@ -675,8 +673,8 @@ section {
     width: 25px;
     border-radius: 50%;
     background-color: transparent;
-    border: 2px solid #6f6f6f;
-    color: #6f6f6f;
+    border: 2px solid #ffffff;
+    color: #ffffff;
     text-align: center;
 }
 .social-circle-border {
@@ -2458,6 +2456,7 @@ textarea.form-control {
   padding: 10px 20px;
   border: 1px solid #DADADA;
   margin: 10px;
+  cursor: pointer;
 }
 .menu-list-section .menu-items-list .menu-item p {
   margin-bottom: 5px;
@@ -2501,6 +2500,158 @@ textarea.form-control {
   text-overflow: ellipsis;
 }
 .menu-items-list {
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+
+
+/***CONTACT INFORMATION**/
+
+
+  .contact-list-item {
+    margin-bottom: 30px;
+  }
+  .contact-list-item {
+      display: block;
+      position: relative;
+  }
+
+  /**** contact Of The Day ****/
+
+.contact-button-filter {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+.contact-button-filter li {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #616161;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  margin: 0 30px;
+  cursor: pointer;
+}
+.contact-button-filter li {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contact-button-filter li.tagsort-contact-active {
+  color: #292929;
+}
+.contact-button-filter li:hover .iconBox-icon:before, .contact-button-filter li:hover .iconBox-icon .glyph-icon:before {
+  border-color: #c5a86a;
+  color: #c5a86a;
+}
+.contact-button-filter li:hover .r-name {
+  color:#ffffff;
+}
+.contact-button-filter .iconBox-icon {
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.contact-button-filter .iconBox-icon:before {
+    content: "";
+    height: 90px;
+    width: 90px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -8px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.contact-button-filter .tagsort-contact-active .iconBox-icon .glyph-icon:before, .contact-button-filter .tagsort-contact-active .iconBox-icon:before {
+  color: #c5a86a;
+  border-color: #c5a86a;
+}
+.contact-button-filter .iconBox-icon .glyph-icon:before {
+    font-size: 50px;
+    margin-left: 0px;
+    color: #FFF;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+ .contact-button-filter .r-name {
+  display: block;
+  padding: 15px 0;
+  color: #ffffff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  }
+.contact-list-section .contact-items-list .contact-item .contact-wrapper {
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #DADADA;
+  margin: 10px;
+}
+.contact-list-section .contact-items-list .contact-item p {
+  margin-bottom: 5px;
+}
+.contact-list-section .contact-items-list .contact-item .contact-wrapper{
+  border-radius: 10px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.contact-list-section .contact-items-list .contact-item .contact-wrapper:hover {
+  border-radius: 0px;
+}
+.contact-list-section .contact-items-list .contact-item .title{
+  float: left;
+}
+.contact-list-section .contact-items-list .contact-item .manuscript {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  text-transform: none;
+  font-weight: 700;
+  color: #292929;
+  padding: 10px 0;
+  margin: 0;
+}
+.contact-list-section .contact-items-list .contact-item .price {
+  float: right;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 21px;
+  color: #c5a86a;
+  padding: 10px 0;
+}
+.contact-list-section .contact-items-list .contact-item .desc {
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.contact-items-list {
   -webkit-transition: all 0.8s;
   -moz-transition: all 0.8s;
   -ms-transition: all 0.8s;
@@ -4044,7 +4195,7 @@ textarea.form-control {
   text-decoration: none;
 }
 .contact-section a {
-  color: #6f6f6f;
+  color: #ffffff;
 }
 .contact-section a:hover {
   color: #c5a86a;
@@ -6132,6 +6283,10 @@ color:#c5a86a;
     position: inherit !important;
 }
 
+.dummy > .contact-item{
+    position: inherit !important;
+}
+
 @media only screen and (max-width: 768px) {
   .row{
     margin-left: 0px !important;
@@ -6218,7 +6373,7 @@ color:#c5a86a;
     background-image:url('../images/slide/02_preview1600x800.jpg');
   }
 
-  .mob-button-active-modal{
+  .desktop-disabled{
     display: none;
   }
 }
