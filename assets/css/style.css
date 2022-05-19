@@ -6362,6 +6362,15 @@ color:#c5a86a;
   .dynamic-image-2{
     background-image:url('../images/slide/02_preview1600x800-mob.jpg');
   }
+
+  .menu-list-section .menu-items-list .menu-item .desc{
+    padding-left: 7px;
+  }
+
+  .about-us .content img{
+    max-width: -webkit-fill-available;
+    max-width: -moz-available;
+  }
 }
 
 @media only screen and (min-width: 769px) {
