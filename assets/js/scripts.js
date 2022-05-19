@@ -403,6 +403,11 @@
             );
         };
 
+        $( document ).ready(function() {
+            $("#troy-contact").show();
+            $("#canton-contact").hide();
+        });
+
         $("#troy").click(function() {
             $("#troy-contact").show();
             $("#canton-contact").hide();
