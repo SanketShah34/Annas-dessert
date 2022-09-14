@@ -313,6 +313,20 @@
 			);
 		}
 
+		function ubereats(){
+			window.open(
+			  "https://www.ubereats.com/store/annas-desserts-3700-n-lilley-rd/8by9GGzEWUSoMVFeHmw3rw?diningMode=PICKUP",
+			  '_blank'
+			);
+		}
+
+		function chownow(){
+			window.open(
+			  "https://eat.chownow.com/order/33418/locations/50051",
+			  '_blank'
+			);
+		}
+
 	</script>
 
 	<!--BEGIN MODAL-->
@@ -322,7 +336,7 @@
 		<div class="modal-content">
 			<span class="close" id="close" data-dismiss="modal">x</span>
 			<div class="row edit-marginTop30">
-				<div class="col-md-6 col-sm-6" onclick="doordash()">
+				<div class="col-md-3 col-sm-3" onclick="doordash()">
 				    <div class="iconBox">
 						<div class="iconBox-icon center-block edit-marginBottom30"><i class="glyph-icon flaticon-delivery"></i></div>
 						<div class="iconBox-description">
@@ -330,11 +344,27 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6" onclick="grubhub()">
+				<div class="col-md-3 col-sm-3" onclick="grubhub()">
 				    <div class="iconBox">
 						<div class="iconBox-icon center-block edit-marginBottom30"><i class="glyph-icon flaticon-browser"></i></div>
 						<div class="iconBox-description">
 							<span class="iconBox-title edit-marginBottom10">Order Now on <img class="foodImg" src="assets/images/grubhub.png"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3" onclick="ubereats()">
+				    <div class="iconBox">
+						<div class="iconBox-icon center-block edit-marginBottom30"><i class="glyph-icon flaticon-delivery"></i></div>
+						<div class="iconBox-description">
+							<span class="iconBox-title edit-marginBottom10">Order Now on <img class="foodImg" src="assets/images/ubereats.png"></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3" onclick="chownow()">
+				    <div class="iconBox">
+						<div class="iconBox-icon center-block edit-marginBottom30"><i class="glyph-icon flaticon-browser"></i></div>
+						<div class="iconBox-description">
+							<span class="iconBox-title edit-marginBottom10">Order Now on <img class="foodImg" src="assets/images/chownow.png"></span>
 						</div>
 					</div>
 				</div>
