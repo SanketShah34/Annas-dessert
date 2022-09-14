@@ -6108,7 +6108,7 @@ color:#c5a86a;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 92%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -6128,7 +6128,7 @@ color:#c5a86a;
 }
 
 .foodImg{
-  width: 22%;
+  width: 35%;
 }
 
 #footer-top .footer-title-small {
